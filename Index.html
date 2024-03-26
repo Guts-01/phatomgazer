@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phatom gazer</title>
     <link rel="stylesheet" href="css/requisito.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/uiverse.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
+
 <body>
+    <header>
 
+        <!-- Aqui vai ser o cabeçalho da página, feita com uma lista não ordenada. -->
 
+        <div class="logo_Do_site">
+            <a href="#">
+                <h1>Phatom Gazer</h1>
+            </a>
+        </div>
+
+        <ul>
+            <li><a href="#">Programação</a></li>
+            <li><a href="#">IA & Machine learning</a></li>
+            <li><a href="#">Segurança</a></li>
+            <li><a href="#">T.I</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+    </header>
+    <!-- Aqui será o corpo do site, com tres divisorias, uma com texto e imagem, uma com a apresentação do roadmap, e um formulario no final para sugestoes de proximas areas. -->
+    <main>
+
+        <section class="conteiner_um">
+
+            <div class="sub_titulo_tech">
+                <h2>Saiba tudo sobre a area tech e escolha a carreira ideal para você</h2>
+            </div>
+
+            <div class="imagem_tech">
+                <img src="Imagens/homePageIMG.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="conteiner_dois">
+            <h2>Descubra e Explore</h2>
+            <p> Entenda as tecnologias necessarias para o desenvolvimento da sua carreira.</p>
+
+            <div class="area_apresentacao">
+
+                <button class="btn">
+                    Front-end
+                </button>
+
+                <button class="btn">
+                    Back-end
+                </button>
+
+                <button class="btn">
+                    Full-stack
+                </button>
+
+            </div>
+        </section>
+
+        <section class="formulario_client">
+
+            <div class="titulo_form_apresentacao">
+                <h2>
+                    Gostou do nosso projeto?
+                </h2>
+                <p>Então mande algumas sugestões de áreas pro nosso time, é rápido! </p>
+            </div>
+
+            <div class="form-container">
+                <div class="form">
+                    <p class="heading">Deixe aqui sua sugestão!</p>
+                    <div class="input_data">
+                        <input placeholder="Nome" type="text" class="input">
+                        <input placeholder="Email" id="mail" type="email" class="input">
+                    </div>
+
+                    <div class="textarea_div">
+
+                        <textarea placeholder="Escreva sua sugestão ou opinião..." rows="10" cols="30" id="message" name="message"
+                            class="textarea"></textarea>
+                    </div>
+
+                    <div class="button-container">
+                        <div class="send-button">Enviar</div>
+                        <div class="reset-button-container">
+                            <div id="reset-btn" class="reset-button">Resetar</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
     <script src="javascript/script_code.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,13 @@
+:root{
+    --corUM:#000000;
+    --corDOIS:#ffffff;
+    --fonteParagrafo:monospace;
+    --fonteTitulo: sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%; 
+}

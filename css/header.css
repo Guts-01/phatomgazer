@@ -1,0 +1,39 @@
+header{
+    padding: 20px;
+    height: 20vh;
+    background-color: var(--corUM);
+    color: var(--corDOIS);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo_Do_site{
+    margin: 20px;
+    font-size: 30px;
+}
+.logo_Do_site a{
+    text-decoration: none;
+    color: var(--corDOIS);
+    font-family:var(--fonteTitulo);
+}
+
+header ul{
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: var(--corDOIS);
+    font-family: var(--fonteParagrafo);
+    font-size: 23px;
+}

@@ -1,0 +1,93 @@
+.form-container {
+    background:linear-gradient(to top,#000000,#7a7a7a);
+    box-shadow: 0px 0px 20px #040404;
+    padding: 30px;
+}
+
+.heading {
+    color: var(--corDOIS);
+    font-size: 1.5rem;
+    font-family: var(--fonteParagrafo);
+    text-align: center;
+    margin: 10px;
+}
+
+.input {
+    color: var(--corUM);
+    background-color: var(--corDOIS);
+    border: 1px solid var(--corUM);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.input_data {
+    color: var(--corUM);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.textarea_div{
+    display: flex;
+    justify-content: center;
+}
+.textarea {
+    width: 650px;
+    justify-content: center;
+    resize: none;
+    padding: 20px;
+    border: 1px solid var(--corUM);
+    border-radius: 10px;
+    background-color: var(--corDOIS);
+    color: #000000;
+    font-size: 25px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.send-button {
+    background: var(--corUM);
+    cursor: pointer;
+    padding: 10px;
+    color: var(--corDOIS);
+    border: 1px solid var(--corDOIS);
+    text-align: center;
+    width: 150px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.send-button:hover {
+    background: var(--corDOIS);
+    border: 1px solid var(--corUM);
+    color: var(--corUM);
+}
+
+.reset-button {
+    background: var(--corUM);
+    cursor: pointer;
+    padding: 10px;
+    color: var(--corDOIS);
+    border: 1px solid var(--corDOIS);
+    text-align: center;
+    width: 150px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.reset-button:hover {
+    background: var(--corDOIS);
+    border: 1px solid var(--corUM);
+    color: var(--corUM);
+}
