@@ -1,4 +1,4 @@
-header{
+header {
     padding: 20px;
     height: 20vh;
     background-color: var(--corUM);
@@ -8,17 +8,21 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-header .logo_Do_site{
+
+header .logo_Do_site {
     margin: 20px;
     font-size: 30px;
-}
-.logo_Do_site a{
-    text-decoration: none;
-    color: var(--corDOIS);
-    font-family:var(--fonteTitulo);
+    border-right: 0 solid var(--corDOISHOVER);
 }
 
-header ul{
+.logo_Do_site a {
+    text-decoration: none;
+    color: var(--corDOIS);
+    font-family: var(--fonteTitulo);
+    transition: 0.8s;
+}
+
+header ul {
     margin: 30px;
     display: flex;
     flex-direction: row;
@@ -27,13 +31,30 @@ header ul{
     gap: 50px;
 }
 
-ul li{
+ul li {
     text-decoration: none;
     list-style: none;
 }
-li a{
+
+li a {
     text-decoration: none;
     color: var(--corDOIS);
     font-family: var(--fonteParagrafo);
     font-size: 23px;
+    transition: 0.8s;
+    border-bottom: 5px solid var(--corUM);
 }
+
+/* Efeitos e animações abaixo */
+
+.logo_Do_site a:hover{
+    color: var(--corDOISHOVER);
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--corDOISHOVER);
+    padding-bottom: 10px;
+    color: var(--corDOISHOVER);
+}
+
+
