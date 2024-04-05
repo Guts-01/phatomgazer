@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/uiverse.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="Imagens/icons8-fantasma-50.png" type="image/x-icon">
+    <script defer src="javascript/form.js"></script>
 </head>
 
 <body>
@@ -26,9 +28,8 @@
 
         <ul>
             <li><a href="#">Programação</a></li>
-            <li><a href="#">IA & Machine learning</a></li>
+            <li><a href="#">Engenharia</a></li>
             <li><a href="#">Segurança</a></li>
-            <li><a href="#">T.I</a></li>
             <li><a href="#">About</a></li>
         </ul>
 
@@ -39,7 +40,7 @@
         <section class="conteiner_um">
 
             <div class="sub_titulo_tech">
-                <h2>Saiba tudo sobre a area tech e escolha a carreira ideal para você</h2>
+                <h2>Saiba tudo sobre a area tech e escolha a carreira ideal para <span>você</span></h2>
             </div>
 
             <div class="imagem_tech">
@@ -67,6 +68,22 @@
                 </button>
 
             </div>
+
+            <div class="area_apresentacao_two">
+
+                <button class="btn">
+                    Data-science
+                </button>
+
+                <button class="btn">
+                    Mobile
+                </button>
+
+                <button class="btn">
+                    DevOps
+                </button>
+
+            </div>
         </section>
 
         <section class="formulario_client">
@@ -77,30 +94,19 @@
                 </h2>
                 <p>Então mande algumas sugestões de áreas pro nosso time, é rápido! </p>
             </div>
-
-            <div class="form-container">
-                <div class="form">
-                    <p class="heading">Deixe aqui sua sugestão!</p>
-                    <div class="input_data">
-                        <input placeholder="Nome" type="text" class="input">
-                        <input placeholder="Email" id="mail" type="email" class="input">
-                    </div>
-
-                    <div class="textarea_div">
-
-                        <textarea placeholder="Escreva sua sugestão ou opinião..." rows="10" cols="30" id="message"
-                            name="message" class="textarea"></textarea>
-                    </div>
-
-                    <div class="button-container">
-                        <div class="send-button">Enviar</div>
-                        <div class="reset-button-container">
-                            <div id="reset-btn" class="reset-button">Resetar</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+                
+            <form action="https://formsubmit.co/oliveriraguto4@gmail.com" method="post" data-form>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="name"  class="name_form" required placeholder="Nome">
+                <label for="email">E-mail</label>
+                <input placeholder="email" type="email" name="email" id="email" class="name_form" required>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="https://127.0.0.1:5500/html/obrigado.html">
+                <label for="mensagem">Deixe sua mensagem!</label>
+                <textarea placeholder="Mensagem" name="mensagem" id="mensagem" class="mensagem_form" cols="30" rows="10" required></textarea>
+                <button type="submit" data-button>Enviar</button>
+            </form>
 
         </section>
 
@@ -122,15 +128,17 @@
                 <a href="#">About</a>
                 ·
                 <a href="#">T.I</a>
-                
+
             </p>
 
-            
+
 
             <div class="footer-icons">
                 <p>Contribuidores</p>
-                <a href="https://github.com/joaohugo2508" target=”_blank”><img src="Imagens/iconGithubJ.png" alt="iconGithub" width="30px"></a>
-                <a href="https://github.com/Guts-01" target=”_blank”><img src="Imagens/gojo.jpg" alt="iconGithub" width="30px"></a>
+                <a href="https://github.com/joaohugo2508" target=”_blank”><img src="Imagens/iconGithubJ.png"
+                        alt="iconGithub" width="30px"></a>
+                <a href="https://github.com/Guts-01" target=”_blank”><img src="Imagens/gojo.jpg" alt="iconGithub"
+                        width="30px"></a>
             </div>
 
             <p class="footer-company-name">Código aberto, deixe os créditos aos desenvolvedores © 2024</p>

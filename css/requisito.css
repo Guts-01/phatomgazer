@@ -1,6 +1,7 @@
 :root{
     --corUM:#000000;
     --corDOIS:#ffffff;
+    --corDOISHOVER:#c9c9c9e7;
     --fonteParagrafo:monospace;
     --fonteTitulo: sans-serif;
 }

@@ -1,93 +1,66 @@
-.form-container {
-    background:linear-gradient(to top,#000000,#7a7a7a);
-    box-shadow: 0px 0px 20px #040404;
+form{
+    border-radius: 20px;
+    box-shadow: 10px 15px 30px #040404;
+    width: 100%;
+    max-width: 30rem;
     padding: 30px;
+    background-color:rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
-.heading {
-    color: var(--corDOIS);
-    font-size: 1.5rem;
-    font-family: var(--fonteParagrafo);
-    text-align: center;
-    margin: 10px;
-}
-
-.input {
-    color: var(--corUM);
-    background-color: var(--corDOIS);
-    border: 1px solid var(--corUM);
-    border-radius: 10px;
+input{
     padding: 15px;
-    margin-bottom: 20px;
-    width: 300px;
+    border: none;
+    color: var(--corDOIS);
+    background-color: var(--corUM);
+    border-radius: 10px;
 }
 
-.input_data {
-    color: var(--corUM);
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+outline: none;
+border-color: #ffffff88;
 }
 
-.textarea_div{
-    display: flex;
-    justify-content: center;
+label{
+    margin-bottom: 10px;
+    color: var(--corDOISHOVER);
 }
-.textarea {
-    width: 650px;
-    justify-content: center;
+
+textarea{
     resize: none;
-    padding: 20px;
-    border: 1px solid var(--corUM);
+    padding: 15px;
+    border: none;
+    background-color: var(--corUM);
+    color: var(--corDOIS);
     border-radius: 10px;
+}
+form button{
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px #040404;
+    border: 1px solid var(--corDOIS);
+    margin:  20px auto;
+}
+
+button:hover,
+button:focus{
+    outline: none;
     background-color: var(--corDOIS);
-    color: #000000;
-    font-size: 25px;
-    height: 150px;
-    margin-bottom: 50px;
-}
-
-.button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-}
-
-.send-button {
-    background: var(--corUM);
-    cursor: pointer;
-    padding: 10px;
-    color: var(--corDOIS);
-    border: 1px solid var(--corDOIS);
-    text-align: center;
-    width: 150px;
-    transition: 0.5s;
-    border-radius: 10px;
-}
-
-.send-button:hover {
-    background: var(--corDOIS);
-    border: 1px solid var(--corUM);
     color: var(--corUM);
-}
-
-.reset-button {
-    background: var(--corUM);
-    cursor: pointer;
-    padding: 10px;
-    color: var(--corDOIS);
-    border: 1px solid var(--corDOIS);
-    text-align: center;
-    width: 150px;
-    transition: 0.5s;
-    border-radius: 10px;
-}
-
-.reset-button:hover {
-    background: var(--corDOIS);
     border: 1px solid var(--corUM);
-    color: var(--corUM);
 }
