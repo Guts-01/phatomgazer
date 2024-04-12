@@ -11,11 +11,24 @@
     <link rel="stylesheet" href="css/uiverse.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/response.css">
     <link rel="shortcut icon" href="Imagens/icons8-fantasma-50.png" type="image/x-icon">
-    <script defer src="javascript/form.js"></script>
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
+    <div class="dev_responsive">
+        <h1>Responsividade em desenvolvimento..</h1>
+        <p>Aguarde atualizações dos desenvolvedores do site..</p>
+        <p>siga > <a href="https://github.com/Guts-01" target="_blank">Guts-01</a> no github para saber mais</p>
+    
+        <p class="version_mobile">primeira versao para celular sairá em: 03/05/2024</p>
+        <p class="version_mobile">Acompanhe a versao para celular utilizando o pc em: <a href="html/celular.html">Mobile</a></p>
+
+        <p class="version_tablet">primeira versao para tablet sairá em: 10/05/2024</p>
+
+    </div>
+
     <header>
 
         <!-- Aqui vai ser o cabeçalho da página, feita com uma lista não ordenada. -->
@@ -55,32 +68,297 @@
 
             <div class="area_apresentacao">
 
-                <button class="btn">
+                <button class="btn" id="openModalBtn_front_end">
                     Front-end
                 </button>
 
-                <button class="btn">
+                <div id="modal_front_end" class="modal">
+                    <div class="modal-content">
+                        <span class=" close close_front_end">&times;</span>
+
+                        <div class="skills_tittle">
+
+                            <h1>Front-end</h1>
+                            <p>tudo que você precisa saber para se tornar um <span class="span_carrer">Front-end</span>
+                            </p>
+                        </div>
+
+                        <div class="skills">
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">HTML5</div>
+
+                                    <div class="content_info">
+                                        <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">CSS3</div>
+
+                                    <div class="content_info">
+                                        <p>Css é um mecanismo para adicionar estilos a uma página web, aplicado
+                                            diretamente nas tags HTML ou ficar contido dentro das tags style</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Javascript</div>
+
+                                    <div class="content_info">
+                                        <p>JavaScript é uma linguagem de programação interpretada estruturada, de script
+                                            em alto nível com tipagem dinâmica fraca e multiparadigma</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="skills_two">
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Git & Github</div>
+
+                                    <div class="content_info">
+                                        <p>Saber sobre versionamento de código é muito importante, saiba sobre git &
+                                            github <a
+                                                href="https://www.alura.com.br/artigos/o-que-e-git-github?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20946398532&hsa_grp=153091871930&hsa_ad=688089973825&hsa_src=g&hsa_tgt=dsa-2258482181163&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=EAIaIQobChMI5ZKD9ae7hQMV92BIAB0PIAQREAAYASAAEgLPp_D_BwE"
+                                                style="text-decoration: none;color:pink;text-decoration: bold;"
+                                                target="_blank">Aqui</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Framework</div>
+
+                                    <div class="content_info">
+                                        <p>Escolha um <a
+                                                href="https://ebaconline.com.br/blog/os7-frameworks-front-end-mais-populares"
+                                                style="text-decoration: none;color:pink;text-decoration: bold;"
+                                                target="_blank">Framework</a> para front e comece a estudar,
+                                            recomendamos: React, Angular, Vue, Ember.js</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Responsividade</div>
+
+                                    <div class="content_info">
+                                        <p>Saiba como desenvolver um site responsivo que sirva tanto para pc, celular ou
+                                            tablet</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <button class="btn" id="openModalBtn_back_end">
                     Back-end
                 </button>
 
-                <button class="btn">
+                <div id="modal_back_end" class="modal">
+                    <div class="modal-content">
+                        <span class="close close_back_end">&times;</span>
+
+                        <div class="skills_tittle">
+
+                            <h1>Back-end</h1>
+                            <p>tudo que você precisa saber para se tornar um <span class="span_carrer">Back-end</span>
+                            </p>
+                        </div>
+
+                        <div class="skills">
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Linguagem de programação para Banco de dados</div>
+
+                                    <div class="content_info">
+                                        <p style="gap: 5px;">Escolha uma linguagem de progamação para BD:
+                                            <br>
+                                            <span
+                                                style="background-color: gray; padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://www.java.com/pt-BR/"
+                                                    style="color: #ffffff;text-decoration: none;">Java</a></span>
+                                            <span
+                                                style="background-color: rgb(1, 35, 137); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://www.python.org/"
+                                                    style="color: #ffffff;text-decoration: none;">Python</a></span>
+                                            <span
+                                                style="background-color: rgb(172, 1, 1); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://learn.microsoft.com/pt-br/dotnet/csharp/"
+                                                    style="color: #ffffff;text-decoration: none;">C#</a></span>
+                                            <span
+                                                style="background-color: rgb(149, 0, 141); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://learn.microsoft.com/pt-br/azure/azure-sql/database/develop-cplusplus-simple?view=azuresql"
+                                                    style="color: #ffffff;text-decoration: none;">C++</a></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Api´s</div>
+
+                                    <div class="content_info">
+                                        <p>Uma API é um conjunto de códigos, regras, protocolos e opções que
+                                            possibilitam a comunicação entre diferentes aplicações.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Banco de dados relacional</div>
+
+                                    <div class="content_info">
+                                        <p>conjunto de informações que organiza dados em relações predefinidas, exemplos
+                                            são:
+                                            <br>
+                                            <span
+                                                style="background-color: rgb(230, 0, 218); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://mariadb.org/"
+                                                    style="color: #ffffff;text-decoration: none;">MARIADB</a></span>
+                                            <span
+                                                style="background-color: rgb(0, 135, 193); padding: 2px 3px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://www.mysql.com/"
+                                                    style="color: #ffffff;text-decoration: none;">MYSQL</a></span>
+                                            <span
+                                                style="background-color: rgb(0, 30, 119); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://www.postgresql.org/"
+                                                    style="color: #ffffff;text-decoration: none;">POSTGRESQL</a></span>
+                                            <span
+                                                style="background-color: rgb(3, 137, 1); padding: 2px 4px; border-radius: 20px; font-size: 10px;">
+                                                <a href="https://www.mongodb.com/pt-br"
+                                                    style="color: #ffffff;text-decoration: none;">MONGODB</a></span>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <h1 style="text-align: center;margin:30px auto;">Saiba mais sobre:</h1>
+                        <p><a href=""
+                                style="text-decoration: none;color: rgb(255, 0, 0);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Saiba
+                                mais...</a></p>
+                    </div>
+
+                </div>
+
+                <button class="btn" id="openModalBtn_full_stack">
                     Full-stack
                 </button>
+
+                <div id="modal_full_stack" class="modal">
+                    <div class="modal-content">
+                        <span class="close close_full_stack">&times;</span>
+
+                        <div class="skills_tittle">
+
+                            <h1>Full-stack</h1>
+                            <p>tudo que você precisa saber para se tornar um <span class="span_carrer">Full-stack</span>
+                            </p>
+                        </div>
+
+                        <div class="skills">
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Front-end</div>
+
+                                    <div class="content_info">
+                                          <p>	HTML <br>
+                                            CSS (TAILWIND, SAAS) <br>
+                                            JAVASCRIPT <br>
+                                            NPM <br>
+                                            NODE.JS <br>
+                                            GIT & GITHUB <br>
+                                            FRAMEWORK (ANGULAR,VUE,REACT) <br>
+                                            LAYOUT RESPONSE <br>
+                                            ARQUITETURA WEB <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">Back-end</div>
+
+                                    <div class="content_info">
+                                        <p>	LINGUAGEM DE PROGRAMAÇÃO <br>
+                                            BANCO DE DADOS RELACIONAL <br>
+                                            APIS<br>
+                                            SEGURANÇA WEB <br>
+                                            TESTES (UNITARIOS, FUNCIONAL & INTEGRAL) <br>
+                                            VM (DOCKER) <br></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cardBox">
+                                <div class="card">
+                                    <div class="skills_modal_tittle">DevOps</div>
+
+                                    <div class="content_info">
+                                        <p>
+                                            SERVIDORES WEB <br>
+                                            ESTRUTURA DE DADOS <br>
+                                            DOCUMENTAÇÃO <br>
+                                            LINUX BASICS <br>
+                                            AWS SERVICE <br>
+                                            MONIT <br>
+                                            ENGENHARIA DE SOFTWARE <br>
+                                            GIT / GITLAB / AZURE DEVOPS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <h1 style="text-align: center;margin:30px auto;">Para se tornar um desenvolvedor Full-stack, voçê precisará estudar muito, separamos somente topicos basicos acima.</h1>
+                        <p><a href=""
+                                style="text-decoration: none;color: rgb(255, 0, 0);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Saiba
+                                mais...</a></p>
+                    </div>
+
+                </div>
 
             </div>
 
             <div class="area_apresentacao_two">
 
                 <button class="btn">
-                    Data-science
+                    Em desenvolvimento
                 </button>
 
                 <button class="btn">
-                    Mobile
+                    Em desenvolvimento
                 </button>
 
                 <button class="btn">
-                    DevOps
+                    Em desenvolvimento
                 </button>
 
             </div>
@@ -94,17 +372,18 @@
                 </h2>
                 <p>Então mande algumas sugestões de áreas pro nosso time, é rápido! </p>
             </div>
-                
+
             <form action="https://formsubmit.co/oliveriraguto4@gmail.com" method="post" data-form>
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="name"  class="name_form" required placeholder="Nome">
+                <input type="text" name="nome" id="name" class="name_form" required placeholder="Nome">
                 <label for="email">E-mail</label>
                 <input placeholder="email" type="email" name="email" id="email" class="name_form" required>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_next" value="https://phantomgazer.netlify.app/html/obrigado.html">
                 <label for="mensagem">Deixe sua mensagem!</label>
-                <textarea placeholder="Mensagem" name="mensagem" id="mensagem" class="mensagem_form" cols="30" rows="10" required></textarea>
+                <textarea placeholder="Mensagem" name="mensagem" id="mensagem" class="mensagem_form" cols="30" rows="10"
+                    required></textarea>
                 <button type="submit" data-button>Enviar</button>
             </form>
 
@@ -121,13 +400,11 @@
             <p class="footer-links">
                 <a href="#">Programação</a>
                 ·
-                <a href="#">IA & machine learning</a>
+                <a href="#">Engenharia</a>
                 ·
                 <a href="#">Segurança</a>
                 ·
                 <a href="#">About</a>
-                ·
-                <a href="#">T.I</a>
 
             </p>
 
@@ -143,23 +420,41 @@
 
             <p class="footer-company-name">Código aberto, deixe os créditos aos desenvolvedores © 2024</p>
         </div>
-        <div class="footer-right">
 
-            <p>Duvidas? contate-nos</p>
+        <article>
+            <h1 style="color: white; text-align: center; font-size: 30px;margin-bottom: 40px;">Versões e desenvolvimento
+            </h1>
+            <aside>
 
-            <form action="#" method="post">
+                <a href="" target="_blank">
+                    <img src="Imagens/james-harrison-vpOeXr5wmR4-unsplash.jpg"
+                        alt="james-harrison-vpOeXr5wmR4-unsplash">
+                </a>
 
-                <input type="text" name="email" placeholder="Email">
-                <textarea name="message" placeholder="Tire sua duvida conosco"></textarea>
-                <button class="send-button">Enviar</button>
+                <a href="html/celular.html">
+                    <img src="Imagens/roman-synkevych-vXInUOv1n84-unsplash.jpg"
+                        alt="roman-synkevych-vXInUOv1n84-unsplash">
+                </a>
 
-            </form>
+                <a href="https://github.com/Guts-01/phatomgazer" target="_blank">
+                    <img src="Imagens/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="florian-olivo-4hbJ-eymZ1o-unsplash">
+                </a>
 
-        </div>
+            </aside>
+
+            <aside>
+                <h2>Notebook</h2>
+                <h2>Mobile</h2>
+                <h2>Código</h2>
+            </aside>
+
+        </article>
+
 
     </footer>
 
     <script src="javascript/script_code.js"></script>
+    <script src="javascript/modal.js"></script>
 </body>
 
 </html>

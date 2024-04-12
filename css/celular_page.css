@@ -1,0 +1,327 @@
+
+body{
+    background: url(../Imagens/mobile.jpg);
+    background-repeat: repeat;
+    background-size: 510px;
+    background-clip: padding-box;
+}
+
+/* ===================================================== */
+/*                    Header                             */
+/* ===================================================== */
+
+header {
+    padding: 20px;
+    height: 20vh;
+    background-color: var(--corUM);
+    color: var(--corDOIS);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo_Do_site {
+    margin: auto;
+    font-size: 35px;
+    text-align: center;
+}
+
+.logo_Do_site a {
+    text-decoration: none;
+    color: var(--corDOIS);
+    font-family: var(--fonteTitulo);
+    transition: 0.8s;
+}
+
+/* Efeitos e animações abaixo */
+
+.logo_Do_site a:hover{
+    color: var(--corDOISHOVER);
+}
+
+li a:hover{
+    border-bottom: 2px solid var(--corDOISHOVER);
+    padding-bottom: 10px;
+    color: var(--corDOISHOVER);
+}
+
+
+/* ===================================================== */
+/*                    Main                               */
+/* ===================================================== */
+
+/* Section abaixo */
+
+.mobile{
+    border: 10px solid rgb(0, 0, 0);
+    margin: 0 30%;
+    background-color: var(--corDOIS);
+}
+
+
+.conteiner_um {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.sub_titulo_tech h2 {
+    margin: 50px auto;
+    width: 400px;
+    color: var(--corDOIS);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--corUM);
+    text-align: center;
+}
+
+.sub_titulo_tech h2 span {
+    transition: 0.8s;
+    padding-right: 10px;
+    animation-duration: 0.7s;
+    animation-name: codeinfinity;
+    animation-iteration-count: infinite;
+    border-right: 5px solid var(--corUM);
+}
+.sub_titulo_tech img{
+    animation: floatAnimationIMG 2s infinite alternate;
+    width: 90%;
+    margin: 100px auto;
+}
+
+.conteiner_dois {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.conteiner_dois h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: var(--corUM);
+    text-align: center;
+}
+
+.conteiner_dois p {
+    text-align: center;
+    font-family: var(--fonteParagrafo);
+    font-size: 20px;
+    color: var(--corUM);
+    text-align: center;
+}
+
+.area_apresentacao {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.area_apresentacao_two {
+    margin-top: 80px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ===================================================== */
+/*                    Formulario                             */
+/* ===================================================== */
+
+
+.formulario_client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+    margin-bottom: 70px;
+}
+
+.titulo_form_apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.titulo_form_apresentacao h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 45px;
+    color: var(--corUM);
+    text-align: center;
+}
+
+.titulo_form_apresentacao p {
+    text-align: center;
+    font-family: var(--fonteParagrafo);
+    font-size: 25px;
+    color: var(--corUM);
+    text-align: center;
+}
+
+form{
+    border-radius: 20px;
+    width: 80%;
+    padding: 30px;
+    background-color:rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+input{
+    padding: 15px;
+    border: none;
+    color: var(--corDOIS);
+    background-color: var(--corUM);
+    border-radius: 10px;
+}
+
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus{
+outline: none;
+border-color: #ffffff88;
+}
+
+label{
+    margin-bottom: 10px;
+    color: var(--corDOISHOVER);
+}
+
+textarea{
+    resize: none;
+    padding: 15px;
+    border: none;
+    background-color: var(--corUM);
+    color: var(--corDOIS);
+    border-radius: 10px;
+}
+form button{
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px #040404;
+    border: 1px solid var(--corDOIS);
+    margin:  20px auto;
+}
+
+button:hover,
+button:focus{
+    outline: none;
+    background-color: var(--corDOIS);
+    color: var(--corUM);
+    border: 1px solid var(--corUM);
+}
+
+/* ===================================================== */
+/*              Efeitos e animações do site              */
+/* ===================================================== */
+
+@keyframes slidein {
+    0% {
+        border-right: 0px solid var(--corDOISHOVER);
+    }
+
+    100% {
+        border-right: 5px solid var(--corDOIS);
+    }
+}
+
+@keyframes codeinfinity {
+
+    100% {
+        border-right: 5px solid var(--corDOIS);
+    }
+}
+
+@keyframes floatAnimationIMG {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/* ===================================================== */
+/*              Efeitos dos botoes do site               */
+/* ===================================================== */
+
+
+.btn {
+    width: 140px;
+    text-align: center;
+    font-size: 10px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px #040404;
+    border: 1px solid var(--corUM);
+}
+
+.btn:active {
+    scale: 0.92;
+}
+
+.btn:hover {
+    background: var(--corDOIS);
+    color: var(--corUM);
+    box-shadow: 0px 0px 0px #040404;
+    border: 1px solid var(--corUM);
+}
+
+/* ===================================================== */
+/*                    Footer                             */
+/* ===================================================== */
+
+
+footer{
+    padding: 50px;
+    height: 20vh;
+    background-color: var(--corUM);
+    color: var(--corDOIS);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+@media (max-width: 900px) {
+
+body{
+    display: none;
+}
+}
