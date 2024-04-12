@@ -45,6 +45,11 @@
     text-decoration: none;
     color: inherit;
     margin: 10px;
+    transition: 1s;
+}
+
+.footer-links a:hover {
+    color: var(--corDOISHOVER);
 }
 
 .footer-company-name {
@@ -65,6 +70,7 @@
     font-size: 14px;
     font-weight: normal;
     margin-bottom: 15px;
+    text-align: start;
 }
 
 .footer-icons a img {
@@ -76,127 +82,31 @@
     margin-right: 10px;
 }
 
-/* Footer Right */
-
-.footer-right {
-    float: right;
+.footer-distributed {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
-.footer-right p {
-    display: inline-block;
-    vertical-align: top;
-    margin: 15px 42px 0 0;
-    color: #ffffff;
-}
-
-/* The contact form */
-
-.footer-distributed form {
-    display: inline-block;
-}
-
-.footer-distributed form input,
-.footer-distributed form textarea {
-    display: block;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background-color: #1f2022;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-    border: none;
-    resize: none;
-
-    font: inherit;
-    font-size: 14px;
-    font-weight: normal;
-    color: #d1d2d2;
-
-    width: 400px;
-    padding: 18px;
-}
-
-.footer-distributed ::-webkit-input-placeholder {
-    color: #5c666b;
-}
-
-.footer-distributed ::-moz-placeholder {
-    color: #5c666b;
-    opacity: 1;
-}
-
-.footer-distributed :-ms-input-placeholder {
-    color: #5c666b;
-}
-
-
-.footer-distributed form input {
-    height: 55px;
-    margin-bottom: 15px;
-}
-
-.footer-distributed form textarea {
-    height: 100px;
-    margin-bottom: 20px;
-}
-
-.footer-distributed form button {
-    background: var(--corUM);
-    cursor: pointer;
-    padding: 10px;
-    color: var(--corDOIS);
-    border: 1px solid var(--corDOIS);
+.footer-distributed article aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    width: 150px;
-    transition: 0.5s;
-    border-radius: 10px;
-    float: right;
+    gap: 20px;
+}
+.footer-distributed article aside h2{
+    font-size: 30px;
+    color: #ffffff;
+    width: 250px;
+    margin-top: 20px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 1000px) {
-
-
-    .footer-distributed .footer-company-name {
-        font-size: 12px;
-    }
-
-    .footer-distributed form input,
-    .footer-distributed form textarea {
-        width: 250px;
-    }
-
-    .footer-distributed form button {
-        padding: 10px 35px;
-    }
-
-}
-
-@media (max-width: 800px) {
-
-    .footer-distributed {
-        padding: 30px;
-    }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-right {
-        float: none;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .footer-distributed .footer-left {
-        margin-bottom: 40px;
-    }
-
-    .footer-distributed form {
-        margin-top: 30px;
-    }
-
-    .footer-distributed form {
-        display: block;
-    }
-
-    .footer-distributed form button {
-        float: none;
-    }
+.footer-distributed article aside img{
+    width: 250px;
+    border: 1px solid white;
+    border-radius: 20px;
 }
